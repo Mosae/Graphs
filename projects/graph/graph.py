@@ -96,6 +96,7 @@ class Graph:
         if visited_vertices is None:
             # if visited vertices is none change to a set
             visited_vertices = set()
+        
         # add starting vertex to visited vertices
         visited_vertices.add(starting_vertex)
         # print current starting vertex
@@ -106,7 +107,7 @@ class Graph:
         while len(neighbors) > 0:
             # for each of the neighbors
             for neighbor in neighbors:
-                #print(f"this is the neighbors", {neighbor})
+                
                 # if the neighbor is not in the visited vertices
                 if neighbor not in visited_vertices:
                     # run the dft_recur function again
